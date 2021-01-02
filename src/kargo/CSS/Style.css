@@ -1,0 +1,27 @@
+
+.FonBackground{
+    -fx-background-color: ffffff;
+    
+}
+
+.profilBackground{
+    -fx-bacground-image: url(../Image/Image/arkaplan.jpg);
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    
+}
+
+.border{
+    
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #0a4f78;
+    
+}
+
+.listes1{
+    
+    -fx-border-width: 0 0 0 1;
+    -fx-border-color: #0a4f78;
+    
+    
+}

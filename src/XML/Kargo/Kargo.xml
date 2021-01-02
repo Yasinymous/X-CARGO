@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<root>
+
+    <Kargo>
+        <UID></UID>
+        <Gonderen>
+            <Adi></Adi>
+            <Soyadi></Soyadi>
+            <Adres></Adres>
+            <Ilce></Ilce>
+            <Il></Il>
+        </Gonderen>
+        <Alici>
+            <Adi></Adi>
+            <Soyadi></Soyadi>
+            <Adres></Adres>
+            <IlCe></IlCe>
+            <Il></Il>
+        </Alici>
+        <Bilgiler>
+   
+            <Uzunluk></Uzunluk>
+            <Genislik></Genislik>
+            <Yukseklik></Yukseklik>
+            <Fiyat></Fiyat>
+        </Bilgiler>
+    </Kargo>
+    
+</root>

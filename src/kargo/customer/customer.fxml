@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root id="AnchorPane" prefHeight="657.0" prefWidth="900.0" styleClass="background-color" stylesheets="@../CSS/customer.css" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT" style="-fx-background-color: #0a4f78;">
+               <padding>
+                  <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+               </padding>
+               <children>
+                  <ImageView fitHeight="44.0" fitWidth="241.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/Logo/DENEME.png" />
+                     </image>
+                  </ImageView>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="44.0" prefWidth="744.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button id="abc" mnemonicParsing="false" onAction="#logout" text="Logout" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <TabPane nodeOrientation="LEFT_TO_RIGHT" tabClosingPolicy="UNAVAILABLE" tabMinWidth="120.0" VBox.vgrow="ALWAYS">
+              <tabs>
+                <Tab text="Cargo Operations">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="backgroundtab">
+                           <children>
+                              <VBox layoutX="87.0" layoutY="33.0" prefHeight="573.0" prefWidth="907.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <TabPane prefHeight="1000.0" prefWidth="900.0" side="LEFT" styleClass="tab-header-background" stylesheets="@../CSS/newtableft.css" tabClosingPolicy="UNAVAILABLE" tabMinWidth="120.0">
+                                      <tabs>
+                                        <Tab text="Add Cargo">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="440.0" prefWidth="390.0">
+                                                   <children>
+                                                      <VBox layoutX="74.0" layoutY="77.0" prefHeight="440.0" prefWidth="876.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                         <children>
+                                                            <StackPane prefHeight="175.0" prefWidth="0.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="175.0" fitWidth="875.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../Image/cargoadd/yen11.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </children>
+                                                            </StackPane>
+                                                            <TabPane prefHeight="411.0" prefWidth="873.0" tabClosingPolicy="UNAVAILABLE" tabMinWidth="120.0">
+                                                              <tabs>
+                                                                <Tab text="Sender">
+                                                                  <content>
+                                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                                           <children>
+                                                                              <HBox layoutX="166.0" layoutY="78.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                                 <children>
+                                                                                    <VBox prefHeight="360.0" prefWidth="436.5">
+                                                                                       <children>
+                                                                                          <VBox prefHeight="400.0" prefWidth="430.0" styleClass="nokta">
+                                                                                             <children>
+                                                                                                <Label prefHeight="25.0" prefWidth="75.0" text="Name" textFill="#ff8000">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" top="30.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </Label>
+                                                                                                <TextField fx:id="sName" prefHeight="35.0" prefWidth="250.0" promptText="Name" styleClass="prompt">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" right="150.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </TextField>
+                                                                                                <Label prefHeight="25.0" prefWidth="124.0" text="Last Name" textFill="#ff8000">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" top="10.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </Label>
+                                                                                                <TextField fx:id="sLastname" prefHeight="35.0" prefWidth="250.0" promptText="Last Name" styleClass="prompt">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" right="150.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </TextField>
+                                                                                                <Label prefHeight="25.0" prefWidth="126.0" text="Address" textFill="#ff8000">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" top="10.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </Label>
+                                                                                                <TextField fx:id="sAdress" prefHeight="35.0" prefWidth="191.0" promptText="Addresss" styleClass="prompt">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" right="150.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </TextField>
+                                                                                             </children>
+                                                                                          </VBox>
+                                                                                       </children>
+                                                                                    </VBox>
+                                                                                    <VBox prefHeight="360.0" prefWidth="436.5">
+                                                                                       <children>
+                                                                                          <VBox prefHeight="400.0" prefWidth="430.0" styleClass="nokta">
+                                                                                             <children>
+                                                                                                <Label prefHeight="25.0" prefWidth="75.0" text="Province" textFill="#ff8000">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" top="30.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </Label>
+                                                                                                <TextField fx:id="sProvince" prefHeight="35.0" prefWidth="250.0" promptText="Province" styleClass="prompt">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" right="150.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </TextField>
+                                                                                                <Label prefHeight="25.0" prefWidth="124.0" text="Distric" textFill="#ff8000">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" top="10.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </Label>
+                                                                                                <TextField fx:id="sDisc" prefHeight="35.0" prefWidth="250.0" promptText="Distric" styleClass="prompt">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" right="150.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </TextField>
+                                                                                             </children>
+                                                                                          </VBox>
+                                                                                       </children>
+                                                                                    </VBox>
+                                                                                 </children>
+                                                                              </HBox>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                  </content>
+                                                                </Tab>
+                                                                <Tab text="Receiver">
+                                                                  <content>
+                                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                                           <children>
+                                                                              <HBox layoutX="236.0" layoutY="130.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                                 <children>
+                                                                                    <VBox prefHeight="360.0" prefWidth="436.5">
+                                                                                       <children>
+                                                                                          <VBox prefHeight="400.0" prefWidth="430.0" styleClass="nokta">
+                                                                                             <children>
+                                                                                                <Label prefHeight="25.0" prefWidth="75.0" text="Name" textFill="#ff8000">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" top="30.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </Label>
+                                                                                                <TextField fx:id="rName" prefHeight="35.0" prefWidth="250.0" promptText="Name" styleClass="prompt">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" right="150.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </TextField>
+                                                                                                <Label prefHeight="25.0" prefWidth="124.0" text="Last Name" textFill="#ff8000">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" top="10.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </Label>
+                                                                                                <TextField fx:id="rLastName" prefHeight="35.0" prefWidth="250.0" promptText="Last Name" styleClass="prompt">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" right="150.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </TextField>
+                                                                                                <Label prefHeight="25.0" prefWidth="126.0" text="Address" textFill="#ff8000">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" top="10.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </Label>
+                                                                                                <TextField fx:id="rAdress" prefHeight="35.0" prefWidth="191.0" promptText="Addresss" styleClass="prompt">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" right="150.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </TextField>
+                                                                                             </children>
+                                                                                          </VBox>
+                                                                                       </children>
+                                                                                    </VBox>
+                                                                                    <VBox prefHeight="360.0" prefWidth="436.5">
+                                                                                       <children>
+                                                                                          <VBox prefHeight="400.0" prefWidth="430.0" styleClass="nokta">
+                                                                                             <children>
+                                                                                                <Label prefHeight="25.0" prefWidth="75.0" text="Province" textFill="#ff8000">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" top="30.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </Label>
+                                                                                                <TextField fx:id="rProviince" prefHeight="35.0" prefWidth="250.0" promptText="Province" styleClass="prompt">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" right="150.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </TextField>
+                                                                                                <Label prefHeight="25.0" prefWidth="124.0" text="Distric" textFill="#ff8000">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" top="10.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </Label>
+                                                                                                <TextField fx:id="rDisc" prefHeight="35.0" prefWidth="250.0" promptText="Distric" styleClass="prompt">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" right="150.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </TextField>
+                                                                                             </children>
+                                                                                          </VBox>
+                                                                                       </children>
+                                                                                    </VBox>
+                                                                                 </children>
+                                                                              </HBox>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                  </content>
+                                                                </Tab>
+                                                                  <Tab text="Confirmation">
+                                                                    <content>
+                                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                                           <children>
+                                                                              <HBox layoutX="174.0" layoutY="46.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                                 <children>
+                                                                                    <VBox prefHeight="360.0" prefWidth="436.5">
+                                                                                       <children>
+                                                                                          <VBox prefHeight="400.0" prefWidth="430.0" styleClass="nokta">
+                                                                                             <children>
+                                                                                                <Label prefHeight="25.0" prefWidth="75.0" text="Length" textFill="#ff8000">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" top="30.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </Label>
+                                                                                                <TextField fx:id="leng" prefHeight="35.0" prefWidth="250.0" promptText="Length" styleClass="prompt" text="0">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" right="150.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </TextField>
+                                                                                                <Label prefHeight="25.0" prefWidth="124.0" text="Width" textFill="#ff8000">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" top="10.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </Label>
+                                                                                                <TextField fx:id="width" prefHeight="35.0" prefWidth="250.0" promptText="Width" styleClass="prompt" text="0">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" right="150.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </TextField>
+                                                                                                <Label prefHeight="25.0" prefWidth="126.0" text="Height" textFill="#ff8000">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" top="10.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </Label>
+                                                                                                <TextField fx:id="height" prefHeight="35.0" prefWidth="191.0" promptText="Height" styleClass="prompt" text="0">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" right="150.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </TextField>
+                                                                                             </children>
+                                                                                          </VBox>
+                                                                                       </children>
+                                                                                    </VBox>
+                                                                                    <VBox prefHeight="360.0" prefWidth="436.5">
+                                                                                       <children>
+                                                                                          <VBox prefHeight="400.0" prefWidth="430.0" styleClass="nokta">
+                                                                                             <children>
+                                                                                                <Label prefHeight="25.0" prefWidth="75.0" text="Pay" textFill="#ff8000">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" top="30.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </Label>
+                                                                                                <TextField fx:id="pay" editable="false" prefHeight="35.0" prefWidth="250.0" promptText="Length" styleClass="prompt" text="0">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" right="150.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </TextField>
+                                                                                                <Button id="sale" minHeight="40.0" minWidth="20.0" mnemonicParsing="false" onAction="#add" prefHeight="40.0" prefWidth="250.0" text="Add">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="40.0" top="50.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </Button>
+                                                                                                <Label fx:id="msg" prefHeight="57.0" prefWidth="250.0">
+                                                                                                   <padding>
+                                                                                                      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                                                                   </padding>
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets left="85.0" top="30.0" />
+                                                                                                   </VBox.margin>
+                                                                                                   <font>
+                                                                                                      <Font size="13.0" />
+                                                                                                   </font>
+                                                                                                </Label>
+                                                                                             </children>
+                                                                                          </VBox>
+                                                                                       </children>
+                                                                                    </VBox>
+                                                                                 </children>
+                                                                              </HBox>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                    </content>
+                                                                  </Tab>
+                                                              </tabs>
+                                                            </TabPane>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </AnchorPane>
+                                          </content>
+                                        </Tab>
+                                          <Tab styleClass="border" text="Cargo Details">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <VBox layoutX="-31.0" layoutY="125.0" prefHeight="200.0" prefWidth="451.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                         <children>
+                                                            <StackPane prefHeight="175.0" prefWidth="875.0">
+                                                               <children>
+                                                                  <HBox prefHeight="174.0" prefWidth="708.0" styleClass="border" stylesheets="@../CSS/Style.css">
+                                                                     <children>
+                                                                        <StackPane prefHeight="150.0" prefWidth="437.5">
+                                                                           <children>
+                                                                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                                                                 <children>
+                                                                                    <VBox prefHeight="169.0" prefWidth="296.0" styleClass="border" stylesheets="@../CSS/Style.css">
+                                                                                       <children>
+                                                                                          <ImageView fitHeight="55.0" fitWidth="274.0" pickOnBounds="true" preserveRatio="true">
+                                                                                             <VBox.margin>
+                                                                                                <Insets left="20.0" />
+                                                                                             </VBox.margin>
+                                                                                             <image>
+                                                                                                <Image url="@../Image/cargoadd/Baülçksçz.png" />
+                                                                                             </image>
+                                                                                          </ImageView>
+                                                                                          <TextField fx:id="searchcargo" prefHeight="26.0" prefWidth="173.0" promptText="Search Cargo">
+                                                                                             <VBox.margin>
+                                                                                                <Insets left="25.0" right="25.0" top="10.0" />
+                                                                                             </VBox.margin>
+                                                                                          </TextField>
+                                                                                          <Button id="sale" minHeight="40.0" minWidth="20.0" mnemonicParsing="false" onAction="#search" prefHeight="40.0" prefWidth="99.0" text="Search">
+                                                                                             <VBox.margin>
+                                                                                                <Insets left="100.0" right="80.0" top="20.0" />
+                                                                                             </VBox.margin>
+                                                                                          </Button>
+                                                                                       </children>
+                                                                                    </VBox>
+                                                                                    <VBox prefHeight="169.0" prefWidth="142.0" styleClass="border" stylesheets="@../CSS/Style.css">
+                                                                                       <children>
+                                                                                          <Button id="sale" mnemonicParsing="false" onAction="#delete" text="Delete">
+                                                                                             <VBox.margin>
+                                                                                                <Insets left="35.0" top="27.0" />
+                                                                                             </VBox.margin>
+                                                                                          </Button>
+                                                                                          <Button id="sale" mnemonicParsing="false" onAction="#apply" prefWidth="71.0" text="Apply">
+                                                                                             <VBox.margin>
+                                                                                                <Insets left="35.0" top="20.0" />
+                                                                                             </VBox.margin>
+                                                                                          </Button>
+                                                                                          <Label fx:id="msg1" prefHeight="21.0" prefWidth="70.0">
+                                                                                             <font>
+                                                                                                <Font size="13.0" />
+                                                                                             </font>
+                                                                                             <VBox.margin>
+                                                                                                <Insets left="35.0" top="5.0" />
+                                                                                             </VBox.margin>
+                                                                                          </Label>
+                                                                                       </children>
+                                                                                    </VBox>
+                                                                                 </children>
+                                                                              </HBox>
+                                                                           </children>
+                                                                        </StackPane>
+                                                                        <ListView fx:id="list" prefHeight="168.0" prefWidth="437.5">
+                                                                           <stylesheets>
+                                                                              <URL value="@../CSS/scroll.css" />
+                                                                              <URL value="@../CSS/Style.css" />
+                                                                           </stylesheets>
+                                                                           <HBox.margin>
+                                                                              <Insets />
+                                                                           </HBox.margin>
+                                                                           <styleClass>
+                                                                              <String fx:value="border" />
+                                                                              <String fx:value="listes1" />
+                                                                           </styleClass>
+                                                                        </ListView>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </StackPane>
+                                                            <HBox prefHeight="400.0" prefWidth="900.0">
+                                                               <children>
+                                                                  <VBox prefHeight="407.0" prefWidth="431.0" styleClass="nokta">
+                                                                     <children>
+                                                                        <Label prefHeight="25.0" prefWidth="75.0" text="Sender" textFill="#ff8000">
+                                                                           <font>
+                                                                              <Font size="20.0" />
+                                                                           </font>
+                                                                           <VBox.margin>
+                                                                              <Insets left="40.0" />
+                                                                           </VBox.margin>
+                                                                        </Label>
+                                                                        <Label prefHeight="25.0" prefWidth="75.0" text="Name" textFill="#ff8000">
+                                                                           <VBox.margin>
+                                                                              <Insets left="40.0" />
+                                                                           </VBox.margin>
+                                                                        </Label>
+                                                                        <TextField fx:id="sName1" prefHeight="35.0" prefWidth="250.0" promptText="Name" styleClass="prompt">
+                                                                           <VBox.margin>
+                                                                              <Insets left="40.0" right="150.0" />
+                                                                           </VBox.margin>
+                                                                        </TextField>
+                                                                        <Label prefHeight="25.0" prefWidth="124.0" text="Last Name" textFill="#ff8000">
+                                                                           <VBox.margin>
+                                                                              <Insets left="40.0" top="10.0" />
+                                                                           </VBox.margin>
+                                                                        </Label>
+                                                                        <TextField fx:id="sLastname1" prefHeight="35.0" prefWidth="250.0" promptText="Last Name" styleClass="prompt">
+                                                                           <VBox.margin>
+                                                                              <Insets left="40.0" right="150.0" />
+                                                                           </VBox.margin>
+                                                                        </TextField>
+                                                                        <Label prefHeight="25.0" prefWidth="175.0" text="Adress" textFill="#ff8000">
+                                                                           <VBox.margin>
+                                                                              <Insets left="40.0" top="10.0" />
+                                                                           </VBox.margin>
+                                                                        </Label>
+                                                                        <TextField fx:id="sAdress1" prefHeight="35.0" prefWidth="191.0" promptText="Adress" styleClass="prompt">
+                                                                           <VBox.margin>
+                                                                              <Insets left="40.0" right="150.0" />
+                                                                           </VBox.margin>
+                                                                        </TextField>
+                                                                        <HBox prefHeight="75.0" prefWidth="430.0">
+                                                                           <children>
+                                                                              <VBox prefHeight="93.0" prefWidth="151.0">
+                                                                                 <children>
+                                                                                    <Label prefHeight="25.0" prefWidth="108.0" text="Province" textFill="#ff8000">
+                                                                                       <VBox.margin>
+                                                                                          <Insets left="40.0" top="10.0" />
+                                                                                       </VBox.margin>
+                                                                                    </Label>
+                                                                                    <TextField fx:id="sProvince1" prefHeight="35.0" prefWidth="191.0" promptText="Province" styleClass="prompt">
+                                                                                       <VBox.margin>
+                                                                                          <Insets left="40.0" />
+                                                                                       </VBox.margin>
+                                                                                    </TextField>
+                                                                                 </children>
+                                                                              </VBox>
+                                                                              <VBox prefHeight="93.0" prefWidth="131.0">
+                                                                                 <children>
+                                                                                    <Label prefHeight="25.0" prefWidth="108.0" text="Distric" textFill="#ff8000">
+                                                                                       <VBox.margin>
+                                                                                          <Insets top="10.0" />
+                                                                                       </VBox.margin>
+                                                                                    </Label>
+                                                                                    <TextField fx:id="sDisc1" prefHeight="35.0" prefWidth="191.0" promptText="Distric" styleClass="prompt" />
+                                                                                 </children>
+                                                                              </VBox>
+                                                                           </children>
+                                                                        </HBox>
+                                                                        <HBox prefHeight="75.0" prefWidth="430.0">
+                                                                           <children>
+                                                                              <VBox prefHeight="93.0" prefWidth="151.0">
+                                                                                 <children>
+                                                                                    <Label prefHeight="25.0" prefWidth="108.0" text="Length" textFill="#ff8000">
+                                                                                       <VBox.margin>
+                                                                                          <Insets left="40.0" top="10.0" />
+                                                                                       </VBox.margin>
+                                                                                    </Label>
+                                                                                    <TextField fx:id="leng1" prefHeight="35.0" prefWidth="191.0" promptText="Length" styleClass="prompt">
+                                                                                       <VBox.margin>
+                                                                                          <Insets left="40.0" />
+                                                                                       </VBox.margin>
+                                                                                    </TextField>
+                                                                                 </children>
+                                                                              </VBox>
+                                                                              <VBox prefHeight="93.0" prefWidth="131.0">
+                                                                                 <children>
+                                                                                    <Label prefHeight="25.0" prefWidth="108.0" text="Width" textFill="#ff8000">
+                                                                                       <VBox.margin>
+                                                                                          <Insets top="10.0" />
+                                                                                       </VBox.margin>
+                                                                                    </Label>
+                                                                                    <TextField fx:id="width1" prefHeight="35.0" prefWidth="191.0" promptText="Width" styleClass="prompt" />
+                                                                                 </children>
+                                                                              </VBox>
+                                                                              <VBox prefHeight="93.0" prefWidth="151.0">
+                                                                                 <children>
+                                                                                    <Label prefHeight="25.0" prefWidth="108.0" text="Height" textFill="#ff8000">
+                                                                                       <VBox.margin>
+                                                                                          <Insets top="10.0" />
+                                                                                       </VBox.margin>
+                                                                                    </Label>
+                                                                                    <TextField fx:id="height1" prefHeight="35.0" prefWidth="191.0" promptText="Height" styleClass="prompt">
+                                                                                       <VBox.margin>
+                                                                                          <Insets />
+                                                                                       </VBox.margin>
+                                                                                    </TextField>
+                                                                                 </children>
+                                                                              </VBox>
+                                                                           </children>
+                                                                        </HBox>
+                                                                     </children>
+                                                                  </VBox>
+                                                                  <AnchorPane prefHeight="387.0" prefWidth="443.0">
+                                                                     <children>
+                                                                        <VBox layoutX="4.0" layoutY="12.0" prefHeight="397.0" prefWidth="368.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                           <children>
+                                                                              <Label prefHeight="25.0" prefWidth="75.0" text="Receiver" textFill="#ff8000">
+                                                                                 <font>
+                                                                                    <Font size="20.0" />
+                                                                                 </font>
+                                                                                 <VBox.margin>
+                                                                                    <Insets left="40.0" />
+                                                                                 </VBox.margin>
+                                                                              </Label>
+                                                                              <Label prefHeight="25.0" prefWidth="95.0" text="Name" textFill="#ff8000">
+                                                                                 <VBox.margin>
+                                                                                    <Insets left="40.0" />
+                                                                                 </VBox.margin>
+                                                                              </Label>
+                                                                              <TextField fx:id="rName1" prefHeight="35.0" prefWidth="250.0" promptText="Name" styleClass="prompt">
+                                                                                 <VBox.margin>
+                                                                                    <Insets left="40.0" right="150.0" />
+                                                                                 </VBox.margin>
+                                                                              </TextField>
+                                                                              <Label prefHeight="25.0" prefWidth="75.0" text="Last Name" textFill="#ff8000">
+                                                                                 <VBox.margin>
+                                                                                    <Insets left="40.0" top="10.0" />
+                                                                                 </VBox.margin>
+                                                                              </Label>
+                                                                              <TextField fx:id="rLastname1" prefHeight="35.0" prefWidth="250.0" promptText="Last Name" styleClass="prompt">
+                                                                                 <VBox.margin>
+                                                                                    <Insets left="40.0" right="150.0" />
+                                                                                 </VBox.margin>
+                                                                              </TextField>
+                                                                              <Label prefHeight="25.0" prefWidth="152.0" text="Adress" textFill="#ff8000">
+                                                                                 <VBox.margin>
+                                                                                    <Insets left="40.0" top="10.0" />
+                                                                                 </VBox.margin>
+                                                                              </Label>
+                                                                              <TextField fx:id="rAdress1" prefHeight="35.0" prefWidth="191.0" promptText="Adress" styleClass="prompt">
+                                                                                 <VBox.margin>
+                                                                                    <Insets left="40.0" right="150.0" />
+                                                                                 </VBox.margin>
+                                                                              </TextField>
+                                                                              <HBox prefHeight="75.0" prefWidth="443.0">
+                                                                                 <children>
+                                                                                    <VBox prefHeight="93.0" prefWidth="151.0">
+                                                                                       <children>
+                                                                                          <Label prefHeight="25.0" prefWidth="108.0" text="Province" textFill="#ff8000">
+                                                                                             <VBox.margin>
+                                                                                                <Insets left="40.0" top="10.0" />
+                                                                                             </VBox.margin>
+                                                                                          </Label>
+                                                                                          <TextField fx:id="rProvince1" prefHeight="35.0" prefWidth="191.0" promptText="Province" styleClass="prompt">
+                                                                                             <VBox.margin>
+                                                                                                <Insets left="40.0" />
+                                                                                             </VBox.margin>
+                                                                                          </TextField>
+                                                                                       </children>
+                                                                                    </VBox>
+                                                                                    <VBox prefHeight="93.0" prefWidth="131.0">
+                                                                                       <children>
+                                                                                          <Label prefHeight="25.0" prefWidth="108.0" text="Distric" textFill="#ff8000">
+                                                                                             <VBox.margin>
+                                                                                                <Insets top="10.0" />
+                                                                                             </VBox.margin>
+                                                                                          </Label>
+                                                                                          <TextField fx:id="rdisc1" prefHeight="35.0" prefWidth="191.0" promptText="Distric" styleClass="prompt" />
+                                                                                       </children>
+                                                                                    </VBox>
+                                                                                 </children>
+                                                                              </HBox>
+                                                                              <Label prefHeight="25.0" prefWidth="108.0" text="Pay" textFill="#ff8000">
+                                                                                 <VBox.margin>
+                                                                                    <Insets left="40.0" top="10.0" />
+                                                                                 </VBox.margin>
+                                                                              </Label>
+                                                                              <TextField fx:id="pay1" prefHeight="35.0" prefWidth="191.0" promptText="Pay" styleClass="prompt">
+                                                                                 <VBox.margin>
+                                                                                    <Insets left="40.0" right="150.0" />
+                                                                                 </VBox.margin>
+                                                                              </TextField>
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                               </children>
+                                                            </HBox>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </Tab>
+                                          <Tab text="User Details">
+                                            <content>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <HBox layoutX="2.0" layoutY="-1.0" prefHeight="527.0" prefWidth="851.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                         <children>
+                                                            <VBox prefHeight="562.0" prefWidth="360.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="147.0" fitWidth="432.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../Image/useradd/Baülçksçz.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Label prefHeight="25.0" prefWidth="75.0" text="Name">
+                                                                     <VBox.margin>
+                                                                        <Insets left="40.0" top="10.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <TextField fx:id="username" prefHeight="35.0" prefWidth="315.0" promptText="Name" styleClass="prompt">
+                                                                     <VBox.margin>
+                                                                        <Insets left="40.0" right="120.0" />
+                                                                     </VBox.margin>
+                                                                  </TextField>
+                                                                  <Label prefHeight="25.0" prefWidth="75.0" text="Last Name">
+                                                                     <VBox.margin>
+                                                                        <Insets left="40.0" right="80.0" top="10.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <TextField fx:id="userlastname" prefHeight="35.0" prefWidth="313.0" promptText="Last Name" styleClass="prompt">
+                                                                     <VBox.margin>
+                                                                        <Insets left="40.0" right="120.0" />
+                                                                     </VBox.margin>
+                                                                  </TextField>
+                                                                  <Button id="sale" minHeight="40.0" minWidth="20.0" mnemonicParsing="false" onAction="#useradd" prefHeight="40.0" prefWidth="272.0" stylesheets="@../CSS/giris.css" text="Add">
+                                                                     <VBox.margin>
+                                                                        <Insets left="40.0" top="30.0" />
+                                                                     </VBox.margin>
+                                                                  </Button>
+                                                                  <Label fx:id="useraddmsg" prefHeight="59.0" prefWidth="190.0">
+                                                                     <padding>
+                                                                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                                     </padding>
+                                                                     <font>
+                                                                        <Font size="15.0" />
+                                                                     </font>
+                                                                     <VBox.margin>
+                                                                        <Insets left="135.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                               </children>
+                                                            </VBox>
+                                                            <VBox prefHeight="562.0" prefWidth="442.0">
+                                                               <children>
+                                                                  <ListView fx:id="list1" prefHeight="148.0" prefWidth="442.0">
+                                                                     <stylesheets>
+                                                                        <URL value="@../CSS/Style.css" />
+                                                                        <URL value="@../CSS/scroll.css" />
+                                                                     </stylesheets>
+                                                                     <styleClass>
+                                                                        <String fx:value="border" />
+                                                                        <String fx:value="listes1" />
+                                                                     </styleClass>
+                                                                  </ListView>
+                                                                  <Label prefHeight="25.0" prefWidth="75.0" text="ID">
+                                                                     <VBox.margin>
+                                                                        <Insets left="40.0" top="10.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <TextField fx:id="userıd" editable="false" prefHeight="35.0" prefWidth="315.0" promptText="ID" styleClass="prompt">
+                                                                     <VBox.margin>
+                                                                        <Insets left="40.0" right="40.0" />
+                                                                     </VBox.margin>
+                                                                  </TextField>
+                                                                  <Label prefHeight="25.0" prefWidth="75.0" text="Name">
+                                                                     <VBox.margin>
+                                                                        <Insets left="40.0" top="10.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <TextField fx:id="editname" prefHeight="35.0" prefWidth="313.0" promptText="Name" styleClass="prompt">
+                                                                     <VBox.margin>
+                                                                        <Insets left="40.0" right="40.0" />
+                                                                     </VBox.margin>
+                                                                  </TextField>
+                                                                  <Label prefHeight="25.0" prefWidth="75.0" text="Last Name">
+                                                                     <VBox.margin>
+                                                                        <Insets left="40.0" top="10.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <TextField fx:id="editlastname" prefHeight="35.0" prefWidth="313.0" promptText="Last Name" styleClass="prompt">
+                                                                     <VBox.margin>
+                                                                        <Insets left="40.0" right="40.0" />
+                                                                     </VBox.margin>
+                                                                  </TextField>
+                                                                  <Label prefHeight="25.0" prefWidth="75.0" text="User Pass">
+                                                                     <VBox.margin>
+                                                                        <Insets left="40.0" top="10.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <TextField fx:id="userpass" prefHeight="35.0" prefWidth="313.0" promptText="User Pass" styleClass="prompt">
+                                                                     <VBox.margin>
+                                                                        <Insets left="40.0" />
+                                                                     </VBox.margin>
+                                                                  </TextField>
+                                                                  <HBox prefHeight="100.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <Button id="sale" minHeight="40.0" minWidth="20.0" mnemonicParsing="false" onAction="#userdelete" prefHeight="40.0" prefWidth="272.0" stylesheets="@../CSS/giris.css" text="Delete">
+                                                                           <HBox.margin>
+                                                                              <Insets left="40.0" right="40.0" top="30.0" />
+                                                                           </HBox.margin>
+                                                                        </Button>
+                                                                        <Button id="sale" minHeight="40.0" minWidth="20.0" mnemonicParsing="false" onAction="#userapply" prefHeight="40.0" prefWidth="272.0" stylesheets="@../CSS/giris.css" text="Apply">
+                                                                           <HBox.margin>
+                                                                              <Insets right="40.0" top="30.0" />
+                                                                           </HBox.margin>
+                                                                        </Button>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <Label fx:id="userapplymsg" prefHeight="59.0" prefWidth="190.0">
+                                                                     <padding>
+                                                                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                                     </padding>
+                                                                     <font>
+                                                                        <Font size="15.0" />
+                                                                     </font>
+                                                                     <VBox.margin>
+                                                                        <Insets left="180.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                            </content>
+                                          </Tab>
+                                      </tabs>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </TabPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </VBox>
+      <Accordion />
+      <Accordion />
+      <Accordion />
+      <Accordion />
+      <Accordion />
+   </children>
+</fx:root>

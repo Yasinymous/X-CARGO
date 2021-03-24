@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<users>
+    <User>
+        <UserName>admin</UserName>
+        <Password>admin</Password>
+        <FirstName>Admin</FirstName>
+        <LastName>Admin</LastName>
+        <status>true</status>
+    </User>
+    <User>
+        <UserName>user3</UserName>
+        <Password>user3</Password>
+        <FirstName>Yasin</FirstName>
+        <LastName>Özyazıcı</LastName>
+        <status>false</status>
+    </User>
+    <User>
+        <UserName>user4</UserName>
+        <Password>user4</Password>
+        <FirstName>Yasin Murat</FirstName>
+        <LastName>Akyüz</LastName>
+        <status>false</status>
+    </User>
+    <User>
+        <UserName>user5</UserName>
+        <Password>user5</Password>
+        <FirstName>deneme</FirstName>
+        <LastName>deneme</LastName>
+        <status>false</status>
+    </User>
+</users>

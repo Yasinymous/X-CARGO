@@ -18,6 +18,22 @@
 **Designed For Ease**
 **Designed For Work**
 
+>[> cargo, classes and function ](https://github.com/Yasinymous/X-CARGO/tree/main/src/XML/Kargo)
+
+>[> user, classes and function](https://github.com/Yasinymous/X-CARGO/tree/main/src/kargo/entity)
+
+>[> css](https://github.com/Yasinymous/X-CARGO/tree/main/src/kargo/CSS)
+>[, image](https://github.com/Yasinymous/X-CARGO/tree/main/src/kargo/Image)
+
+>[> main Class ](https://github.com/Yasinymous/X-CARGO/tree/main/src/kargo)
+>[> login, screen and function](https://github.com/Yasinymous/X-CARGO/tree/main/src/kargo/giris)
+>[> customer, screen function](https://github.com/Yasinymous/X-CARGO/tree/main/src/kargo)
+>[> user, screen and function](https://github.com/Yasinymous/X-CARGO/tree/main/src/kargo)
+
+
+
+
+
 **Here are the visuals**
 
 <img width="1012" alt="Ekran Resmi 2020-01-02 23 48 04" src="https://user-images.githubusercontent.com/48564989/103466650-cfe02980-4d57-11eb-861b-e5887b6eb36f.png">
@@ -41,7 +57,5 @@
 <img width="1012" alt="Ekran Resmi 2020-01-02 23 51 53" src="https://user-images.githubusercontent.com/48564989/103466574-51838780-4d57-11eb-9dd1-ce0808b85a53.png">
 
 
-**VIA**
-
-![logosiyah](https://user-images.githubusercontent.com/48564989/103466981-3ca8f300-4d5b-11eb-95a7-f4fa04155cce.png)
-
+# VIA
+### Contact [@yasinymous](mailto:ysnakyz55@gmail.com) !

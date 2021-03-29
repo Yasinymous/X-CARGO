@@ -18,17 +18,18 @@
 **Designed For Ease**
 **Designed For Work**
 
+
+>[> main Class ](https://github.com/Yasinymous/X-CARGO/tree/main/src/kargo)
+>[> login, screen and function](https://github.com/Yasinymous/X-CARGO/tree/main/src/kargo/giris)
+>[> customer, screen function](https://github.com/Yasinymous/X-CARGO/tree/main/src/kargo)
+>[> user, screen and function](https://github.com/Yasinymous/X-CARGO/tree/main/src/kargo)
+
 >[> cargo, classes and function ](https://github.com/Yasinymous/X-CARGO/tree/main/src/XML/Kargo)
 
 >[> user, classes and function](https://github.com/Yasinymous/X-CARGO/tree/main/src/kargo/entity)
 
 >[> css](https://github.com/Yasinymous/X-CARGO/tree/main/src/kargo/CSS)
 >[, image](https://github.com/Yasinymous/X-CARGO/tree/main/src/kargo/Image)
-
->[> main Class ](https://github.com/Yasinymous/X-CARGO/tree/main/src/kargo)
->[> login, screen and function](https://github.com/Yasinymous/X-CARGO/tree/main/src/kargo/giris)
->[> customer, screen function](https://github.com/Yasinymous/X-CARGO/tree/main/src/kargo)
->[> user, screen and function](https://github.com/Yasinymous/X-CARGO/tree/main/src/kargo)
 
 
 
